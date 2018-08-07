@@ -32,7 +32,7 @@ cd /etc/cron.d
 sudo wget https://raw.githubusercontent.com/p0lr/PAN_DUG/master/pan_dhcp_cron
 
 #install apache2 and configure it to allow cgi
-sudo apt-get install apache2 -y
+sudo apt-get update && sudo apt-get install apache2 -y
 sudo a2enmod cgid
 sudo service apache2 restart
 
